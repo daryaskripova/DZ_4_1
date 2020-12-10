@@ -13,13 +13,13 @@ public class Main {
             System.out.println(" ");
         }
         System.out.println(" ");
+        System.out.println("Cдвиг массива");
         toLeft(Arr);
     }
 
 
-        //сдвиг массива
+        //метод сдвига массива
     public static void toLeft(int[][] mas) {
-        System.out.println("Cдвиг массива");
         for (int i = 0; i < mas.length; i++) {
             for (int j = 1; j < mas[i].length; j++) {
                 mas[i][j-1] = mas[i][j];        //второй элемент равен первому
