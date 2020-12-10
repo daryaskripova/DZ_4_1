@@ -17,7 +17,6 @@ public class Main {
         toLeft(Arr);
     }
 
-
         //метод сдвига массива
     public static void toLeft(int[][] mas) {
         for (int i = 0; i < mas.length; i++) {
