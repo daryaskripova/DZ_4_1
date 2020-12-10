@@ -16,15 +16,17 @@ public class Main {
 
         //сдвиг массива
         System.out.println("Cдвиг массива");
-        {
-            for (int i = 0; i < Arr.length; i++) {
-                for (int j = 1; j <= Arr[i].length-1; j++) {
-                    Arr[i][j-1] = Arr[i][j];        //второй элемент равен первому
-                    System.out.print(Arr[i][j] + " ");
+
+        public void toLeft(int[] mas) {
+            for (int i = 0; i < mas.length; i++) {
+                for (int j = 1; j <= mas.length-1; j++) {
+                    mas[i][j-1] = mas[i][j];        //второй элемент равен первому
+                    System.out.print(mas[i][j] + " ");
 
                 }
                 System.out.println(" ");
             }
         }
     }
+    toLeft(Arr);
 }
