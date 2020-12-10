@@ -2,8 +2,8 @@ package vtb.skripova;
 
 public class Main {
 
-    //вывод массива на экран
     public static void main(String[] args) {
+        //вывод массива на экран
         System.out.println("Первоначальный массив");
         int[][] Arr = {{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}};
         for (int i = 0; i < Arr.length; i++) {
@@ -13,9 +13,9 @@ public class Main {
             System.out.println(" ");
         }
         System.out.println(" ");
-        System.out.println("Cдвиг массива");
 
         //сдвиг массива
+        System.out.println("Cдвиг массива");
         {
             for (int i = 0; i < Arr.length; i++) {
                 for (int j = 1; j <= Arr[i].length-1; j++) {
