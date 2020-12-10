@@ -22,9 +22,10 @@ public class Main {
     public static void toLeft(int[][] mas) {
         for (int i = 0; i < mas.length; i++) {
             for (int j = 1; j < mas[i].length; j++) {
-                mas[i][j-1] = mas[i][j];        //второй элемент равен первому
+                mas[i][j-1] = mas[i][j];        //первый элемент равен второму
                 System.out.print(mas[i][j] + " ");
                 }
+
             System.out.println(" ");
             }
         }
