@@ -28,9 +28,9 @@ public class Main {
         }
         for (int i = 0; i < mas.length; i++) {
             for (int j = 0; j < mas[i].length; j++) {
-                System.out.print(mas[i][j] + " ");
+                System.out.print(mas[i][j] + " ");  //выводим на печать сдвинутый массив
             }
-            System.out.println(" ");        //выводим на печать сдвинутый массив
+            System.out.println(" ");
         }
     }
 }
