@@ -23,14 +23,14 @@ public class Main {
             for (int j = 1; j < mas[i].length; j++) {
                 int x = mas[i][j];
                 mas[i][j] = 0;
-                mas[i][j - 1] = x;        //первый элемент равен второму
+                mas[i][j - 1] = x;          //первый элемент равен второму
             }
         }
         for (int i = 0; i < mas.length; i++) {
             for (int j = 0; j < mas[i].length; j++) {
                 System.out.print(mas[i][j] + " ");
             }
-            System.out.println(" ");
+            System.out.println(" ");        //выводим на печать сдвинутый массив
         }
     }
 }
