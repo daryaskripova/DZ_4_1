@@ -17,17 +17,20 @@ public class Main {
         toLeft(Arr);
     }
 
-        //метод сдвига массива
+    //метод сдвига массива
     public static void toLeft(int[][] mas) {
         for (int i = 0; i < mas.length; i++) {
             for (int j = 1; j < mas[i].length; j++) {
-                /*int a=mas[i].length;
-                if (j==a) mas[i][j]=0;            //пытаюсь присвоить 0 последнему элементу
-                else */ mas[i][j-1] = mas[i][j];        //первый элемент равен второму
-                System.out.print(mas[i][j] + " ");
-                }
-
-            System.out.println(" ");
+                int x = mas[i][j];
+                mas[i][j] = 0;
+                mas[i][j - 1] = x;        //первый элемент равен второму
             }
         }
+        for (int i = 0; i < mas.length; i++) {
+            for (int j = 0; j < mas[i].length; j++) {
+                System.out.print(mas[i][j] + " ");
+            }
+            System.out.println(" ");
+        }
     }
+}
